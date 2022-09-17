@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Movie } from "types";
 
 interface Props {
@@ -27,10 +28,12 @@ const Card: React.FC<Props> = ({ movie }) => {
 					</div>
 				</div>
 				<div className="relative w-full h-64 lg:h-auto lg:w-1/2 rounded-t lg:rounded-t-none lg:rounded-r inline-block">
-					<img
+					<Image
+					    loading="lazy"
 						className="w-full h-full absolute inset-0 object-cover rounded-t lg:rounded-r lg:rounded-t-none"
 						src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`}
 						alt="banner"
+						layout="fill"
 					/>
 				</div>
 			</div>
