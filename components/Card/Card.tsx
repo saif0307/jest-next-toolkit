@@ -12,12 +12,12 @@ const Card: React.FC<Props> = ({ movie }) => {
 				<div className="w-full lg:w-1/2">
 					<div className="pt-4 lg:pt-6 pb-4 lg:pb-6 pl-4 lg:pl-6 pr-4 lg:pr-6">
 						<div className="flex justify-between items-center lg:items-start flex-row-reverse lg:flex-col">
-							<h4 className="text-base text-indigo-700 .text-indigo-600 tracking-normal leading-4">
+							<p className="text-base text-indigo-700 .text-indigo-600 tracking-normal leading-4">
 								Popularity: {movie?.popularity}
-							</h4>
-							<h4 className="lg:mt-3 text-gray-600 .text-gray-400 text-base font-normal">
+							</p>
+							<p className="lg:mt-3 text-gray-600 .text-gray-400 text-base font-normal">
 								{movie?.release_date}
-							</h4>
+							</p>
 						</div>
 						<h2 className="text-gray-800 .text-gray-100 mt-4 mb-2 tracking-normal text-xl lg:text-2xl font-bold">
 							{movie?.title}

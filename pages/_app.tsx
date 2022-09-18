@@ -4,10 +4,10 @@ import { store } from "../components/store/store";
 import { Provider } from "react-redux";
 import Header from "@/components/Header/Header";
 export default function MyApp({ Component, pageProps }: AppProps) {
-	return (
-		<Provider store={store}>
-			<Header />
-			<Component {...pageProps} />;
-		</Provider>
-	);
+  return (
+    <Provider store={store}>
+      <Header />
+      <Component {...pageProps} />;
+    </Provider>
+  );
 }
